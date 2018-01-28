@@ -32,6 +32,7 @@ module.exports = function parse(feedXML, callback) {
       node.target = result;
       node.textMap = {
         'title': true,
+        'guid': true,
         'link': true,
         'language': text => {
           var lang = text;
